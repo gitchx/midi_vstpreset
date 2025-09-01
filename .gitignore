@@ -1,0 +1,39 @@
+# ===========================
+# Node / Next.js
+# ===========================
+node_modules/
+.next/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===========================
+# Laravel / PHP
+# ===========================
+/vendor/
+.env
+.phpunit.result.cache
+/storage/*.key
+/storage/framework/cache/data/*
+/storage/logs/*
+/storage/debugbar/*
+
+# ===========================
+# Docker
+# ===========================
+docker-compose.override.yml
+mysql/data/
+
+# ===========================
+# OS / エディタ
+# ===========================
+.DS_Store
+*.swp
+*.swo
+
+
+# ===========================
+# MySQL
+# ===========================
+mysql/.env

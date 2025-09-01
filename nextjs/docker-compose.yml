@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  nextjs:
+    image: node:20
+    container_name: nextjs
+    working_dir: /app
+    volumes:
+      - ./:/app
+    ports:
+      - "3000:3000"
+    networks:
+      - vst_midi_network
+    command: sh -c "npm install && npm run dev"
+
+networks:
+  vst_midi_network:
+    external: true
+

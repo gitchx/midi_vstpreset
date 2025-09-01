@@ -1,0 +1,17 @@
+services:
+  laravel:
+    build: .
+    container_name: laravel
+    working_dir: /var/www/html
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "8000:8000"
+    networks:
+      - vst_midi_network
+    command: php artisan serve --host=0.0.0.0 --port=8000
+
+networks:
+  vst_midi_network:
+    external: true
+
