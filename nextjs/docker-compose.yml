@@ -3,9 +3,9 @@ services:
   nextjs:
     image: node:20
     container_name: nextjs
-    working_dir: /app
+    working_dir: /src
     volumes:
-      - ./:/app
+      - ./src:/src
     ports:
       - "3000:3000"
     networks:
